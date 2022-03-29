@@ -1,0 +1,12 @@
+[
+    {"id": 1, "Text": "Pasillo recto"},
+    {"id": 2, "Text": "Pasillo gira izquierda"},
+    {"id": 3, "Text": "Pasillo gira derecha"},
+    {"id": 4, "Text": "Cruce en T"},
+    {"id": 5, "Text": "Cruce 4 caminos"},
+    {"id": 6, "Text": "Habitacion 3 x 3"},
+    {"id": 7, "Text": "Habitacion 3 x 6"},
+    {"id": 8, "Text": "Habitacion 6 x 6"},
+    {"id": 9, "Text": "Habitacion 6 x 9"},
+    {"id": 10, "Text": "Habitacion 9 x 9"}
+]

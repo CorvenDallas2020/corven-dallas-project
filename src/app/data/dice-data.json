@@ -1,0 +1,11 @@
+[
+    {"diceValue": 0, "diceTxt": "Selecciona un dado"},
+    {"diceValue": 3, "diceTxt": "D3"},
+    {"diceValue": 4, "diceTxt": "D4"},
+    {"diceValue": 6, "diceTxt": "D6"},
+    {"diceValue": 8, "diceTxt": "D8"},
+    {"diceValue": 10, "diceTxt": "D10"},
+    {"diceValue": 12, "diceTxt": "D12"},
+    {"diceValue": 20, "diceTxt": "D20"},
+    {"diceValue": 100, "diceTxt": "D100"}
+]

@@ -1,0 +1,31 @@
+<div style="text-align:center">
+    <hr />
+    <h2>{{diceRollerObject.title}}</h2>
+    <hr />
+    <div>
+        <div class="form-group">
+            <span>{{diceRollerObject.numDiceTxt}}</span>
+            &nbsp;
+            <input type="number" size="5" min="1" [(ngModel)]="numDice">
+            &nbsp;
+            <select (change)="selectChangeHandler($event)">
+                <option *ngFor="let dice of diceTypes" value="{{dice.diceValue}}" >{{dice.diceTxt}}</option>
+            </select>
+            &nbsp;
+            <span>{{diceRollerObject.modDiceTxt}}</span>
+            &nbsp;
+            <input type="number" size="5" [(ngModel)]="mod">
+            &nbsp;
+            <button (click)="showResults(numDice, diceValue, mod)">
+                {{diceRollerObject.rollDiceTxt}}</button>
+        </div>
+        &nbsp;&nbsp;
+        <div>
+            <span>{{diceRollerObject.resultTxt}}</span>
+        </div>
+        <div>
+            <textarea rows="10" cols="100" >{{diceRollerObject.resultValue}}</textarea>
+        </div>
+        <button style="float:center" (click)="resetForm()">{{diceRollerObject.resetTxt}}</button>
+    </div>
+</div>
