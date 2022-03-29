@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AppComponent } from '../app.component';
-import diceData from '../data/dice-data.json';
+import { AppComponent } from '../../app.component';
+import diceData from '../../data/dice-data.json';
 
 @Component({
   selector: 'app-dice-roller',

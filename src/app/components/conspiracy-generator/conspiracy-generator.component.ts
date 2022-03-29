@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { AppComponent } from '../../app.component';
 import { DiceRollerComponent } from '../dice-roller/dice-roller.component';
-import conspiracyData from '../data/conspiracy-data.json';
+import conspiracyData from '../../data/conspiracy-data.json';
 
 @Component({
   selector: 'app-conspiracy-generator',

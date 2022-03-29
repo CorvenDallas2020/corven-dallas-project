@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { DiceRollerComponent } from './dice-roller/dice-roller.component';
-import { DungeonGeneratorComponent } from './dungeon-generator/dungeon-generator.component';
-import { ConspiracyGeneratorComponent } from './conspiracy-generator/conspiracy-generator.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { DiceRollerComponent } from './components/dice-roller/dice-roller.component';
+import { DungeonGeneratorComponent } from './components/dungeon-generator/dungeon-generator.component';
+import { ConspiracyGeneratorComponent } from './components/conspiracy-generator/conspiracy-generator.component';
 
 
 const routes: Routes = [

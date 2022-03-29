@@ -1,6 +1,6 @@
-<mat-toolbar color="primary">
+<!-- <mat-toolbar color="primary">
   <h1>
-    Corven Dallas Project 
+    CDP 
   </h1>
   <button mat-button routerLink="/">Home</button>
   <button mat-button routerLink="/diceRoller">Dice Roller</button>
@@ -8,6 +8,38 @@
   <button mat-button routerLink="/conspiracyGenerator">Conspiracy Generator</button>
   <button mat-button routerLink="/about">About</button>
 
-</mat-toolbar>
+</mat-toolbar> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/favicon.ico" alt="CDP" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/diceRoller">DiceRoller</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/dungeonGenerator">Dungeon Generator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/conspiracyGenerator">Conspiracy Generator</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>

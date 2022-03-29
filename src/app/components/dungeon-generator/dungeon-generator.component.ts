@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DiceRollerComponent } from '../dice-roller/dice-roller.component';
-import { AppComponent } from '../app.component';
-import dungeonData from '../data/dungeon-data.json';
+import { AppComponent } from '../../app.component';
+import dungeonData from '../../data/dungeon-data.json';
 
 @Component({
   selector: 'app-dungeon-generator',
