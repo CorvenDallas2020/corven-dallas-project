@@ -7,7 +7,7 @@ import { DungeonGeneratorComponent } from './components/dungeon-generator/dungeo
 import { ConspiracyGeneratorComponent } from './components/conspiracy-generator/conspiracy-generator.component';
 
 
-const routes: Routes = [
+const APP_ROUTES: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'diceRoller', component: DiceRollerComponent },
@@ -17,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(APP_ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

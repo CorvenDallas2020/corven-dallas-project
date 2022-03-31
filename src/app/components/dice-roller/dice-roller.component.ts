@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppComponent } from '../../app.component';
-import diceData from '../../data/dice-data.json';
+import { DiceService, iDiceType } from 'src/app/services/dice.service';
 
 @Component({
   selector: 'app-dice-roller',
@@ -10,6 +10,10 @@ import diceData from '../../data/dice-data.json';
 
 export class DiceRollerComponent implements OnInit {
 
+  diceTypes: iDiceType[] = [];
+  numDice:number = 1;
+  diceValue = 1;
+  mod:number = 0;
   diceRollerObject = {
     title: "Lanzador de dados",
     selectDiceTxt: "Selecciona un dado",
@@ -21,23 +25,17 @@ export class DiceRollerComponent implements OnInit {
     warning: "Complete la selección",
     resultValue: ""
   };
-  /*form: FormGroup = new FormGroup({
-    numDice: new FormControl('Test name', [Validators.required, Validators.minLength(3)]),
-    diceValue: new FormControl('test@example.com', [Validators.required, Validators.maxLength(50)]),
-    mod: new FormControl(45, [Validators.min(18), Validators.max(65)])
-    });*/
   
-  constructor() { }
-
-  ngOnInit(): void {
-    this.diceTypes = diceData;
-    //this.form.controls["firstName"].setValidators([Validators.minLength(1), Validators.maxLength(30)]);
+  constructor(private _diceService: DiceService) {
+    console.log("DiceRollerComponent START");
   }
 
-  diceTypes: iDiceType[] = [];
-  numDice:number = 1;
-  diceValue = 1;
-  mod:number = 0;
+  ngOnInit(): void {
+    this.diceTypes = this._diceService.getDiceTypes();
+    console.log("DiceRollerComponent onInit")
+  }
+
+  
 
   public showResults = (numDice:number, diceValue:number, mod:number) => {
     console.log("showResults START");
@@ -75,9 +73,4 @@ export class DiceRollerComponent implements OnInit {
     this.diceValue = event.target.value;
   }
 
-}
-
-interface iDiceType {
-  diceValue:number;
-  diceTxt:string;
 }
