@@ -1,10 +1,10 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/corven-dallas-project",
     "ignore": [
       "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+      "/.*",
+      "/node_modules/**"
     ]
   }
 }
